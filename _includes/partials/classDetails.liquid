@@ -4,7 +4,7 @@
   <h3>{{ sections.details.title2 }}</h3>
   <ul>
     {% for item in sections.details.list %}
-      <li>{{ item }}</li>
+      <li class="{{ item.class }}">{{ item.text }}</li>
     {% endfor %}
   </ul>
 </section>

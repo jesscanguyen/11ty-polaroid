@@ -10,12 +10,24 @@
       "text": "With Polaroid Cloud, you can sync your photos to your favorite cloud service while still enjoying the instant printing you’ve come to expect from Polaroid. Using our special instant photo paper, your image is uploaded to the web and a QR code is generated and printed with the instant photo. Perfect for sharing with your friends and family.",
       "title2": "Easy, cheesy!",
       "list": [
-        "Connect your polaroid to a WiFi network",
-        "Configure your favorite cloud",
-        "Point, shoot, and print your QR-tagged photo",
-        "Share your physical and digital photos with friends and family"
-      ]
-    },
+      {
+        "text": "Connect your polaroid to a WiFi network",
+        "class": "wifi"
+      },
+      {
+        "text": "Configure your favorite cloud",
+        "class": "cloud"
+      },
+      {
+        "text": "Point, shoot, and print your QR-tagged photo",
+        "class": "qr"
+      },
+      {
+        "text": "Share your physical and digital photos with friends and family",
+        "class": "pic"
+      }
+    ]
+  },
     "cta": {
       "title": "Be the first to know.",
       "form": {

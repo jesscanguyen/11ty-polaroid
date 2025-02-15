@@ -1,5 +1,70 @@
+/* resources */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
 :root {
     --black: #424242;
     --white: #E9E9E9;
     --red: #FF3F3C;
+}
+
+/* styling */
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    background: var(--white);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+}
+
+main {
+    background: url('/images/polaroid.png') no-repeat center 100px;
+    margin: 0 auto;
+    width: 1000px;
+
+}
+
+.hero {
+    text-align: center;
+    min-height: 800px;
+}
+
+.hero h2 {
+    font-size: 9em;
+    line-height: 1em;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.details ul li {
+    list-style-type: none;
+    margin: 10px 0;
+    padding: 0 0 0 70px;
+}
+
+.details ul li.wifi {
+    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
+}
+
+.details ul li.cloud {
+    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
+}
+
+.details ul li.qr {
+    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
+}
+
+.details ul li.pic {
+    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
 }
