@@ -1,0 +1,10 @@
+<section class="details">
+  <h3>{{ sections.details.title1 }}</h3>
+  <p>{{ sections.details.text }}</p>
+  <h3>{{ sections.details.title2 }}</h3>
+  <ul>
+    {% for item in sections.details.list %}
+      <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+</section>

@@ -1,24 +1,11 @@
 ---
 layout: layout.liquid
 title: Polaroid Cloud
-
-sections:
-- className: hero
-  headingLevel: h2
-  headingText: Film to Phone
-  contents: 
-
-- className: details
-  headingLevel: h3
-  headingText: Any cloud, any time
-  contents: hi 
 ---
-
-<header>
-    <h1>Polaroid Cloud</h1>
-</header>
-
-{% for section in sections %}
-  {% include "section-layout.liquid" %}
-{% endfor %}
-
+<p>hallo</p>
+{% include "partials/header.liquid" %}
+<main>
+  {% include "partials/classHero.liquid" %}
+  {% include "partials/classDetails.liquid" %}
+  {% include "partials/classCTA.liquid" %}
+</main>
