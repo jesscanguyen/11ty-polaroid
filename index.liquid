@@ -1,7 +1,24 @@
 ---
 layout: layout.liquid
-title: 11ty Boilerplate
+title: Polaroid Cloud
+
+sections:
+- className: hero
+  headingLevel: h2
+  headingText: Film to Phone
+  contents: 
+
+- className: details
+  headingLevel: h3
+  headingText: Any cloud, any time
+  contents: hi 
 ---
 
-<h1>Yet Another 11ty <strong>Boilerplate</strong></h1>
-<img alt="pine" src="/images/pine.png" width="50" />
+<header>
+    <h1>Polaroid Cloud</h1>
+</header>
+
+{% for section in sections %}
+  {% include "section-layout.liquid" %}
+{% endfor %}
+
