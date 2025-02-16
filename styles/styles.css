@@ -6,12 +6,14 @@
     --black: #424242;
     --white: #E9E9E9;
     --red: #FF3F3C;
+    --font: "Inter", sans-serif;
+    --smallPadding: 20px;
 }
 
 /* styling */
 
 body {
-    font-family: "Inter", sans-serif;
+    font-family: var(--font);
     color: var(--black);
     background: var(--white);
     margin: 0;
@@ -19,20 +21,25 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: var(--smallPadding);
     margin-bottom: 100px;
 }
 
 header h1 {
     margin: 0;
-    font-weight: normal;
 }
 
 main {
     background: url('/images/polaroid.png') no-repeat center 100px;
     margin: 0 auto;
     width: 1000px;
+}
 
+h3 {
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 900;
+    margin-bottom: 25px;
 }
 
 .hero {
@@ -45,20 +52,30 @@ main {
     line-height: 1em;
     text-transform: uppercase;
     margin: 0;
+    font-weight: 900;
+}
+
+.details {
+    margin: 0 auto;
+    width: 660px;
 }
 
 .details ul li {
     list-style-type: none;
     margin: 10px 0;
-    padding: 0 0 0 70px;
+    padding: 0 0 0 60px;
+    align-items: center;
+    height: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .details ul li.wifi {
-    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
+    background: url(/images/wifi-solid\ 1.svg) no-repeat center left;    
 }
 
 .details ul li.cloud {
-    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
+    background: url(/images/cloud-arrow-up-solid\ 1.svg) no-repeat center left;    
 }
 
 .details ul li.qr {
@@ -66,5 +83,40 @@ main {
 }
 
 .details ul li.pic {
-    background: url(/images/qrcode-solid\ 1.svg) no-repeat center left;    
+    background: url(/images/photo-film-solid\ 1.svg) no-repeat center left;    
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 80px;
+}
+
+.cta form {
+    background: linear-gradient(#E2E2E2, #D6D7D6);
+    padding: var(--smallPadding);
+    border-radius: 20px;
+}
+
+.cta input[type="button"] {
+    padding: var(--smallPadding);
+    background: var(--red);
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    font-family: var(--font);
+    border: none;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+.cta input[type="text"] {
+    padding: var(--smallPadding);
+    background: #ECECEC;
+    font-family: var(--font);
+    border: none;
+    width: 400px;
+    color: var(--black);
 }
